@@ -1,0 +1,592 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    /* height: 100%; */
+    background-image: url(https://www.wuit.cn/images/bj1.jpg);
+    background-repeat: repeat-x;
+}
+
+header {
+    width: 100%;
+    height: 163px;
+    background-color: #061A4E;
+}
+
+.headerBox {
+    margin: 0 auto;
+    width: 1260px;
+    height: 100%;
+}
+.headerbg{
+    float: left;    
+    width: 800px;
+    height: 100%;
+    background-image: url("https://www.wuit.cn/images/index426_21.png");
+    background-repeat:  no-repeat;
+    /* background-size: cover; */
+    background-position: 0px 20px;
+}
+.headerlogo{
+    float: right;
+    width: 455px;
+    height: 63px;
+    background-image: url(https://www.wuit.cn/images/index426_22.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.headeript{
+    margin:10px 17px ;
+    padding: 0 0 0 24px ;
+    width: 156px;
+    height: 26px;
+    background-image: url(https://www.wuit.cn/system/resource/images/research/seach_bg.gif);
+    background-repeat: no-repeat;
+    background-position: 1px 2px;
+}
+.headerBox>button{
+    cursor: pointer;
+    width: 46px;
+    height: 30px;
+    border: 1px solid transparent ;
+}
+.headerBox>button:active{
+    background-color: rgb(187, 187, 187);
+}
+
+
+
+
+nav{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+}
+.navBox{
+    display: flex;
+    margin: 0 auto;
+    width: 1260px;
+    height: 100%;
+    justify-content:space-around;
+}
+.navBox>li{
+    cursor: pointer;
+    width: 110px;
+    height: 90%;
+    margin: auto 0;
+    font-size: 16pt;
+    line-height: 54px;
+    text-align: center;
+    /* background-color: red; */
+}
+.navBox>li:hover{
+    color: white;
+    background-color: #061A4E;
+}
+
+
+
+
+
+
+
+.body{
+    margin:  0 auto;
+    width: 1260px;
+    /* height: 2000px; */
+
+}
+
+.news{
+    /* display: none; */
+    display: flex;
+    flex-wrap: wrap;
+    margin:  0 auto;
+    width: 100%;
+    /* height: 691px; */
+    justify-content:space-between;
+    /* background-color: red; */
+}
+.col-1{
+    /* float: left; */
+    width: 270px;
+    height: 100%;
+    /* background-color: burlywood; */
+}
+
+
+.col-3{
+    /* float: right; */
+    width: 270px;
+    height: 100%;
+    /* background-color: burlywood; */
+}
+.title{
+    margin: 5px 0 10px 3px;
+    font-size: 16px;
+    line-height: 20.8px;
+    font-family: "SourceSansPro-Regular", "微软雅黑";
+    text-transform: uppercase;
+    color: #666;
+}
+.title>span:nth-child(2){
+
+    font-size: .16rem;
+}
+.list>ul>li>.img{
+    overflow: hidden;
+    width: 270px;
+    height: 150px;
+    /* background-image: url(https://www.tsinghua.edu.cn/image/weixintupian_20210412190357.jpg); */
+    background-size: cover;
+}
+.list>ul>li>.img>img{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    transition: 0.6s;
+}
+.list>ul>li>.img>img:hover{
+    transform: scale(1.2);
+}
+
+.name{
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: bold;
+    padding: 20px 0;
+    border-bottom: 1px solid rgb(150, 150, 150);
+}
+.name:hover{
+    color: rgb(0, 0, 161);
+}
+li:last-child>.name{
+    border-bottom: none;
+}
+
+.col-2{
+    /* float: left; */
+    position: relative;
+    width: 644px;
+    height: 691px;
+    
+    border-left:1px solid rgb(150, 150, 150) ;
+    border-right: 1px solid rgb(150, 150, 150);
+    /* background-color: blue; */
+}
+.col-2>ul>li>.img{
+    cursor: pointer;
+    overflow: hidden;
+}
+.col-2>ul>li>.img>img{
+    width: 100%;
+    height: 396px;
+    transition: .6s;
+}
+.col-2>ul>li>.img>img:hover{
+    transform: scale(1.2);
+}
+.col-2>ul>li>.title{
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #666;
+}
+.col-2>ul>li>.title::before{
+    content: "— ";
+}
+.col-2>ul>li>.title::after{
+    content: " —";
+}
+.col-2>ul>li>.name{
+    padding: 10px 53px;
+    width: 538px;
+    height: 57px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    /* background-color: blue; */
+}
+.col-2>ul>li>p{
+    padding:0 53px ;
+    font-size: 16px;
+    color: rgb(153, 153, 153);
+}
+.arrow{
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    width: 100%;
+    height: 29px;
+    justify-content:space-around;
+}
+.arrow>ul{
+    width: 52px;
+    display: flex;
+    justify-content: space-between;
+}
+.arrow>ul>li{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color:#9d9d9d;
+}
+.arrow>.left,.arrow>.right{
+    width: 56px;
+    height: 29px;
+    background-repeat: no-repeat;
+}
+.arrow>.left{
+    background-image: url(https://www.tsinghua.edu.cn/image/prev58.png);
+}
+.arrow>.right{
+    background-image: url(https://www.tsinghua.edu.cn/image/next58.png);
+}
+
+
+.col-4{
+    /* width: 100%;  */
+
+}
+.col-4>img{
+    width: 100%;
+}
+
+
+.images{
+    display: none;
+}
+.Htitle{
+    padding: 40px 0 40px 0;
+    margin: 10px 0;
+    text-align: center;
+    border-bottom: 1px solid rgb(151, 151, 151);
+}
+
+.imagesBox{
+    display: flex;
+    margin: 20px;
+    width: 100%;
+    /* height: 900px; */
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* align-content: space-around; */
+}
+.imagesBox>img{
+    cursor: pointer;
+    margin: 20px 0;
+    width: 350px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 6px rgb(87, 87, 87) ;
+    transition: .8s;
+
+    /* height: 155px; */
+}
+
+.imagesBox>img:hover{
+    box-shadow:3px 3px  5px rgb(0, 102, 255) ;
+    transform: scale(1.1);
+}
+
+
+
+
+.faculty{
+    display: none;
+    margin: 20px 0;
+}
+.facultyBox{
+
+}
+
+.badge{
+    margin: 0px auto;
+    width: 100px;
+    height: 100px;
+    background-image: url("https://www.wuit.cn/images/index426_21.png");
+    background-size: cover;
+    background-position: -24px 0;
+}
+.facultyMain{
+    
+    display: flex;
+    position: relative;
+    width: 100%;
+    /* height: 1500px;   */
+
+}
+.facultyMain::before{
+    content: "";
+    position: absolute;
+    /* top: calc(19%); */
+    top: -30px;
+    left: 50%;
+    margin-left: -0.5px;
+    height: calc(100% + 30px);
+    width: 1px;
+    background: #dcdcdc;
+    z-index: -1;
+}
+.facultyMain::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    margin-left: -10px;
+    height: 20px;
+    width: 20px;
+    background: #0c318f;
+    z-index: -1;
+    bottom: 0;
+    border-radius: 50%;
+}
+
+
+
+
+.setL,.setR{
+    display: flex;
+    width: 630px;
+    /* height: 100px; */
+    flex-direction: column;
+}
+.setL>div,.setR>div{
+    display: flex;
+    position: relative;
+    padding-top: 30px;
+    
+    width: calc(100% - 30px);
+    /* height: 100px; */
+    justify-content: space-between;
+}
+.setL>div{
+    padding-right: 30px;
+    flex-direction: row-reverse;
+}
+.setR>div{
+    padding-left: 30px;
+    /* flex-direction: row-reverse; */
+}
+.setL>div>h1,.setR>div>h1{
+    color: rgb(0, 0, 161);
+}
+.setL>div>ul>li,.setR>div>ul>li{
+    font-size: 20px;
+}
+
+
+.setL>div,.setR>div{
+    margin-bottom:  40px;
+}
+.setR>div:nth-child(1){
+    margin: 50px 0;
+}
+
+
+
+.setL>div::before{
+    content: "";
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    background: rgb(0, 0, 161);
+    width: 100%;
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+}
+.setL>div::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 1px solid rgb(0, 0, 161);
+    width: 100%;
+}
+.setR>div::before{
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    background: rgb(0, 0, 161);
+    width: 100%;
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+}
+.setR>div::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 1px solid rgb(0, 0, 161);
+    width: 100%;
+}
+
+
+
+
+.headline{
+    position: relative;
+    display: none;
+}
+.lineBack{
+    display: flex;
+    justify-content:space-between;
+    margin: 100px 0;
+    width: 1260px;
+    height: 648px;
+    background-color: white;
+}
+.lineBack::after{
+    content: "";
+    z-index: -1;
+    display: block;
+    position: absolute;
+    width: 1260px;
+    height: 648px;
+    left: 40px;
+    top:190px ;
+    background: url(https://www.tsinghua.edu.cn/new/image/img1705.jpg) center no-repeat;
+    background-size: 100% 100%;
+}
+.lineLeft,.lineRight{
+    /* float: left; */
+    overflow: hidden;
+}
+.lineLeft>ul{
+    display: flex;
+    width: calc(900px * 5);
+    
+}
+.lineLeft>ul>li{
+    width: 900px;
+    height: 648px;
+    background-size: cover;
+    
+    
+}
+.lineLeft{
+    width: 900px;
+    height: 100%;
+    /* background-color: rgb(0, 0, 161); */
+}
+.lineRight{
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    height: 100%;
+    /* background-color: pink; */
+}
+.lineRight>li{
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    padding: 0 30px;
+    height: 129.6px;
+    font-weight: bold;
+    transition: .6s all ease;
+    /* color: white; */
+    /* background-color: purple; */
+    border-bottom: rgb(170, 170, 170) solid 1px;
+}
+.lineRight>li>.lineTime{
+    z-index: 10;
+}
+.lineRight>li>.lineName{
+    z-index: 10;
+    width: 150px;
+    font-size: 18px;
+}
+.lineRight>li>.lineImg{
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 140px;
+    height: 100%;
+    
+    background-size: cover;
+}
+.lineRight>li:hover {
+    color: white;
+    background-color: rgb(0, 114, 221);
+}
+
+
+.logon{
+    height: 700px;
+}
+.logonBox{
+    display: flex;
+    flex-direction: column;
+}
+.logonBox>div{
+    display: flex;
+    margin: 10px 0;
+    justify-content: center;
+}
+.logonBox>div>label{
+    display: block;
+    width: 100px;
+    font-size: 20px;
+    line-height: 34px;
+}
+.logonBox>div>input{
+    width: 200px;
+    height: 30px;
+    font-size: 18px;
+}
+.btn>input{
+    margin: 0 30px;
+}
+
+
+
+footer{
+    bottom: 0;
+    /* position: absolute; */
+    width: 100%;
+    height: 146px;
+    background-color: #061A4E;
+}
+.footer{
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    width: 1260px;
+    height: 100%;
+}
+.footer>p{
+    position: absolute;
+    font-size: 20px;
+    color: white;
+    
+}
+
+.footer>p:nth-child(1){
+    top: 40px;
+}
+.footer>p:nth-child(2){
+    top: 80px;
+}
+.footer>.img{
+    position: absolute;
+    right: 0;
+    width: 120px;
+    height: 142px;
+    background-image: url(https://www.wuit.cn/images/weixin.png);
+}
